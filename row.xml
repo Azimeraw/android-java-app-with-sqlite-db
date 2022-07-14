@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+
+    android:background="@color/design_default_color_primary">
+
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/round_back" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:gravity="left">
+            <TextView
+                android:id="@+id/nameTVV"
+
+                android:layout_below="@id/imageView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20sp"
+                android:textColor="@color/myprimarycolor"
+                android:padding="5dp"
+                android:textStyle="bold"
+
+                android:text="Contact Name" />
+            <TextView
+                android:id="@+id/phoneTVV"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:padding="5dp"
+
+                android:textSize="20sp"
+                android:textColor="@color/myprimarycolor"
+                android:layout_below="@id/nameTVV"
+
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/emailTVV"
+                android:layout_below="@id/phoneTVV"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textSize="18sp"
+
+                android:padding="5dp"
+
+                android:textColor="@color/myprimarycolor"/> </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
